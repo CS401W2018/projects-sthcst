@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div vs Span Example</title>
+    <style>
+        /* Styling the div to show block-level behavior */
+        .container {
+            width: 100%;
+            background-color: lightblue;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        /* Styling the span to show inline behavior */
+        .highlight {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Example of a <div> tag -->
+    <div class="container">
+        <h2>This is a block-level container (div)</h2>
+        <p>The div container groups this block of content. Notice how it takes up the full width of the page and starts on a new line.</p>
+    </div>
+
+    <!-- Example of a <span> tag inside a paragraph -->
+    <p>
+        This is an inline element. <span class="highlight">This text is highlighted in red using a span</span>, but notice how the span does not break the line and stays within the flow of the text.
+    </p>
+
+</body>
+</html>
