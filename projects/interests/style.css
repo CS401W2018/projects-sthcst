@@ -1,0 +1,38 @@
+nav {
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+}  
+
+h1 {
+    color: rgb(11.52, -0.39, -17.95);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+}
+
+h2 {
+    color: blue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+}
+
+h3 {
+    color: red;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    text-align: center;
+}
+
+.main_p {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
