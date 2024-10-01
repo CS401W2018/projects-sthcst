@@ -1,5 +1,13 @@
-nav {
+body {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 50px;
+    padding: 0;
+}
 
+nav {
+    margin-top: -30px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     padding: 10px;
@@ -8,7 +16,7 @@ nav {
 h1 {
     color: rgb(11.52, -0.39, -17.95);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    font-size: 50px;
     text-align: center;
 }
 
@@ -22,13 +30,25 @@ h2 {
 h3 {
     color: red;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-    text-align: center;
 }
 
+/* my id */
+#the_p {
+    color: darkorange;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* my class */
 .main_p {
     color: black;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* my span */
+#firstSong {
+    color: purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
 }
 
 p {
@@ -36,3 +56,11 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+footer {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+    border-radius: 30px;
+    border-style: dotted;
+}
