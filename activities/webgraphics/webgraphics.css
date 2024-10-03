@@ -1,0 +1,19 @@
+nav {
+    background-color: #030847;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+}
+img {
+    max-width: 80%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+}
