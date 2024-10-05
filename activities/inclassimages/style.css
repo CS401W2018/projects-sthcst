@@ -1,0 +1,46 @@
+nav {
+    color:blue;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+.mainheader {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.current {
+    color:red;
+}
+
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-image: url('ankor.jpg');
+    background-repeat: repeat;
+    background-size: 20%;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+    padding: 10px;
+    background-color: green;
+    border-style: dotted;
+    border-radius: 5%;
+    color: white;
+}
+
+p {
+    color: #333;
+    padding: 10px;
+    background-color: green;
+    border-style: dotted;
+    border-radius: 5%;
+    color: white;
+}
