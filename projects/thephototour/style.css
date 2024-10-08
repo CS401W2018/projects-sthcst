@@ -1,6 +1,10 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 20px;
+    background-image: url("backgroundwan.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    
 }
 
 header {
@@ -20,7 +24,7 @@ nav {
 }
 
 .current {
-    color:green;
+    color : red;
 }
 
 #flag {
@@ -32,7 +36,23 @@ nav {
     color: green;
 }
 .gallery {
-    float: left;
+    float: bottom;
     width: 45%;
     padding: 5px;
-  }
+}
+
+main {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+}
