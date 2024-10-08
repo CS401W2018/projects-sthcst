@@ -39,6 +39,7 @@ nav {
     float: bottom;
     width: 45%;
     padding: 5px;
+    image-resolution: 300dpi;
 }
 
 main {
