@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav il {
+    display: inline;
+}
+
+nav a {
+    display: block;
+    background-color: #333;
+    color: white;
+    border-bottom: solid white;
+    padding: 10px 10px;
+}
+
+nav a:hover {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.allnav {
+    color: white;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+#treepic{
+    width: 250px;
+    border: thin solid black;
+    float: left;
+    text-align: center;
+}
+
+#treepic img {
+    width: 250px;
+}
+
+.end {
+    clear: both;
+}
