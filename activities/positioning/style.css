@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
     margin: 40px;
     padding-left: 20px;
     padding-right: 20px;
@@ -21,15 +20,15 @@ nav il {
 
 nav a {
     display: block;
-    background-color: #333;
+    background-color: #0c1868;
     color: white;
     border-bottom: solid white;
     padding: 10px 10px;
 }
 
 nav a:hover {
-    background-color: whitesmoke;
-    color: black;
+    background-color: #525675;
+    color: white;
 }
 
 .allnav {
@@ -37,7 +36,7 @@ nav a:hover {
 }
 
 header {
-    background-color: #333;
+    background-color: #0c1868;
     color: white;
     text-align: center;
     padding: 5px;
@@ -45,7 +44,7 @@ header {
 
 #treepic{
     width: 250px;
-    border: thin solid black;
+    border: thin solid #0c1868;
     float: left;
     text-align: center;
 }
@@ -56,4 +55,22 @@ header {
 
 .end {
     clear: both;
+}
+
+h2 {
+    color: #0c1868;
+    margin-top: 30px;
+}
+
+main h1 {
+    color: #0c1868;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #0c1868;
+    color: white;
+    margin-top: 40px;
+    padding: 10px;
 }
