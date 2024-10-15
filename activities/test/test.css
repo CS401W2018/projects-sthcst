@@ -25,6 +25,9 @@ nav {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px #c31616;
+    max-width: 800px;
+    min-width: 500px;
 }
 
 nav a {
