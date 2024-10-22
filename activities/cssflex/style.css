@@ -12,6 +12,19 @@ body {
     background-color: #f4f4f4;
 }
 
+#topnav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+#topnavs {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
 h2 {
     text-align: center;
     margin: 20px 0;
@@ -35,4 +48,4 @@ h3 {
     background-color: bisque;
     padding: 10px 20px;
     width: 50px;
-}
+}   

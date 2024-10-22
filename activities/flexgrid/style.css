@@ -1,0 +1,71 @@
+h1 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #3f0000;
+    text-align: center;
+    max-width: 100%;
+}
+
+nav a:hover {
+    background-color: #444;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: center;
+}
+
+.ramenpic {
+    width: 250px;
+    border: thin solid #0c1868;
+    text-align: center;
+}
+
+.grouppic {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.mainrow {
+    display: grid;
+    grid-template-columns: 1fr auto auto auto; /* Four equal columns */
+    gap: 20px;
+    padding: 20px;
+}
+
+.mainrow img {
+    max-width: 100%;
+}
+
+.mainpics {
+    text-align: center;
+    border: thin solid #0c1868;
+    width: 253px;
+}
+
+#footerlinks {
+    display: grid;
+    text-align: center;
+    margin-top: 20px;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #3f0000;
+    padding: 20px;
+}
+
+.bottomlink {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    max-width: 100%;
+}
+
+footer a:hover {
+    color: gray;
+}
