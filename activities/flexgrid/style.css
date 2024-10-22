@@ -54,7 +54,7 @@ nav {
     display: grid;
     text-align: center;
     margin-top: 20px;
-    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     background-color: #3f0000;
     padding: 20px;
 }
