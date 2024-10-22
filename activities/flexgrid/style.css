@@ -40,6 +40,10 @@ nav {
     padding: 20px;
 }
 
+.mainrow aside {
+    width: 200px;
+}
+
 .mainrow img {
     max-width: 100%;
 }
