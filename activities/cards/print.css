@@ -1,0 +1,42 @@
+body {
+    font-family: 'Times New Roman', Times, serif
+    /* margin: 0;
+    padding: 0; */
+}
+
+header h1 {
+    text-align: center;
+    color: brown;
+    margin: 0%;
+    background-color: white;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.card {
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+    margin: 10px 0;
+}
+
+.card img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
