@@ -1,7 +1,5 @@
 body {
     font-family: 'Roboto', sans-serif;
-    /* margin: 0;
-    padding: 0; */
     background-color: rgb(red, green, blue);
     max-width: 80%;
     position: center;
@@ -11,7 +9,6 @@ body {
 header h1 {
     text-align: center;
     color: brown;
-    margin: 0%;
     background-color: white;
 }
 
