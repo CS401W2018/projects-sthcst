@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: rgb(red, green, blue);
-    max-width: 80%;
+    max-width: 90%;
     position: center;
     margin: auto;
 }
@@ -17,9 +17,9 @@ nav {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     justify-content: center;
     background-color: brown;
-    padding: 10px;;
+    padding: 10px;
     text-align: center;
-    border-radius: 10px;;
+    border-radius: 10px;
 }
 
 nav a {
@@ -32,11 +32,12 @@ nav a:hover {
 }
 
 .container {
-    display: flex;
-    justify-content: space-between; /* Ensures space between .row and .aboutfam */
+    display: grid;
+    grid-template-columns: 20% 80%;
 }
 
 .card {
+    display: grid;
     width: 250px;
     border: thin solid black;
     box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
@@ -44,11 +45,15 @@ nav a:hover {
 }
 
 aside {
-    grid-template-columns: 20% auto;
+    display: grid;
+}
+
+.side {
+    margin-right: 10px;
 }
 
 aside img {
-    width: 250px;
+    width: 100px;
 }
 
 .card h3 {
@@ -69,3 +74,87 @@ aside img {
     justify-content: space-between;
     gap: 20px;
 }
+
+@media only screen and (max-width: 600px)
+    {
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(red, green, blue);
+            max-width: 90%;
+            position: center;
+            margin: auto;;
+        }
+        
+        header h1 {
+            text-align: center;
+            color: brown;
+        }
+        
+        nav {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            background-color: brown;
+            padding: 10px;
+            text-align: center;
+            border-radius: 10px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        .row {
+            order: 1; /* Row appears first */
+            padding-top: 50px;
+        }
+    
+        .side {
+            order: 2; /* Aside appears below row */
+        }
+        
+        .card {
+            width: 90%; /* Adjusts card width for mobile */
+            margin: auto;
+        }
+
+        aside {
+            display: grid;
+        }
+        
+        .side {
+            margin-right: 10px;
+        }
+        
+        aside img {
+            width: 100px;
+        }
+        
+        .card h3 {
+            text-align: center;
+        }
+        
+        .card h3, p {
+            padding: 10px;
+        }
+        
+        .card img {
+            width: 100%;
+        }
+        
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        
+    }
