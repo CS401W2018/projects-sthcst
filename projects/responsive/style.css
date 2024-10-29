@@ -1,0 +1,71 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(red, green, blue);
+    max-width: 80%;
+    position: center;
+    margin: auto;
+}
+
+header h1 {
+    text-align: center;
+    color: brown;
+    background-color: white;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: brown;
+    padding: 10px;;
+    text-align: center;
+    border-radius: 10px;;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensures space between .row and .aboutfam */
+}
+
+.card {
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+    margin: 10px 0;
+}
+
+aside {
+    grid-template-columns: 20% auto;
+}
+
+aside img {
+    width: 250px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card h3, p {
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
