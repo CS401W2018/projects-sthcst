@@ -6,6 +6,10 @@ body {
     margin: auto;
 }
 
+h2 {
+    text-align: center;
+}
+
 header h1 {
     text-align: center;
     color: brown;
@@ -42,6 +46,10 @@ nav a:hover {
     border: thin solid black;
     box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
     margin: 10px 0;
+}
+
+aside li {
+    list-style: none;
 }
 
 aside {
@@ -112,25 +120,33 @@ aside img {
         }
     
         .row {
-            order: 1; /* Row appears first */
+            order: 1;
             padding-top: 50px;
         }
     
         .side {
-            order: 2; /* Aside appears below row */
+            order: 2;
+            display: grid;
+            margin: auto;
+
+        }
+
+        .side img {
+            margin: auto;
+            width: 300px;
         }
         
         .card {
-            width: 90%; /* Adjusts card width for mobile */
+            width: 90%;
             margin: auto;
         }
 
         aside {
             display: grid;
         }
-        
-        .side {
-            margin-right: 10px;
+
+        aside li {
+            list-style: none;
         }
         
         aside img {
