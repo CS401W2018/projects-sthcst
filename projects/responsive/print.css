@@ -1,0 +1,100 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(red, green, blue);
+    max-width: 90%;
+    position: center;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    display: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+header h1 {
+    text-align: center;
+    color: brown;
+    background-color: white;
+}
+
+nav {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: brown;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.card {
+    display: grid;
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+    margin: 10px 0;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside {
+    display: grid;
+}
+
+.side {
+    margin-right: 10px;
+}
+
+aside img {
+    width: 100px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card h3, p {
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+footer {
+    display: none;
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+}
