@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <header><h1>My Class Schedule</h1></header>
+    <main>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Dept.</th><th>Number</th><th>Time</th><th>Location</th><th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+                <th colspan="5">Information Technology</th>
+            </tr>
+            <tr>
+                <td>IT</td><td>240</td><td>11AM</td><td rowspan="2">P3</td><td>3</td>
+            </tr>
+            <tr>
+                <td>IT</td><td>240</td><td>12PM</td><td>3</td>
+            </tr>
+            <tr>
+                <th colspan="5">Computer Science</th>
+            </tr>
+            <tr>
+                <td>CS</td><td>210</td><td>2PM</td><td>P1</td><td>3</td>
+            </tr>
+            <tr>
+                <td>CS</td><td>211</td><td>12PM</td><td>P2</td><td>3</td>
+            </tbody>    
+            <tfoot>
+                <tr>
+                    <th colspan="4" id="total-creditds">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>
