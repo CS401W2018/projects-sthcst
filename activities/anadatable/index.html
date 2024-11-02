@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Tables</title>
+</head>
+<body>
+    <header><h1>Web Design</h1></header>
+    <main>
+        <table class="schedule">
+            <caption>My Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Department</th><th>Number</th><th>Time</th><th>Credits</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tr>
+            <tr>
+                <td>CS</td><td>140</td><td>11AM</td><td class="credits">3</td>
+            </tr>
+            <tr>
+                <td>CS</td><td>140</td><td>11AM</td><td class="credits">3</td>
+            </tr>
+            <tr>
+                <td>CS</td><td>140</td><td>11AM</td><td class="credits">3</td>
+            </tr>
+            <tr>
+                <td>CS</td><td>140</td><td>11AM</td><td class="credits">3</td>
+            </tr>
+            </tbody>    
+            <tfoot>
+                <tr>
+                    <th colspan="3" id="total-creditds">Total Credits</th>
+                    <td headers="total-credits">12</td>
+                </tr>
+            </tfoot>
+        </table>
+        <h1>
+            Engagament Questions
+        </h1>
+        <h2 class="question">Why don't we use the border property?</h2>
+        <p class="answer">Because this will make the table look like a spreadsheet and that would be very weird. It's like a screenshot from Microsoft Excel</p>
+        <h2 class="question">What is the easiest way to color every other row a different color?</h2>
+        <p class="answer">Using the nth-child() selector</p>
+        <h2 class="question">When should we use a table?</h2>
+        <p class="answer">When we have data that is best represented in a grid format, schedules, and other data that we would want to present in an orderly manner.</p>
+    </main>
+</body>
+</html>
