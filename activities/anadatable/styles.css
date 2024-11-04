@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.schedule {
+    margin: 5px auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+.schedule thead, .schedule tfoot {
+    background-color: blue;
+    color: #fff;
+}
+
+.schedule tbody tr:nth-child(even) {
+    background-color: #CCC;
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    text-align: center;
+    padding: 10px;
+    background-color: blue;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.answer {
+    text-align: center;
+    padding: 10px;
+    background-color: #CCC;
+    border-radius: 10px;
+    color: black;
+}
+
+.credits {
+    text-align: center;
+}
