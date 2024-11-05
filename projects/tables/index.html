@@ -4,45 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>HTML Tables</title>
+    <title>Aling Aud's Karinderia</title>
 </head>
 <body>
-    <header><h1>Web Design</h1></header>
+    <header><h1>Menu</h1></header>
     <main>
-        <div class="menu">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Food</th><th>Kind</th><th>Price</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <th colspan="3">Breakfast</th>
-                </tr>
-                <tr>
-                    <td>Eggsilog</td><td>Fried Egg with Rice</td><td>11AM</td>
-                </tr>
-                <tr>
-                    <td>Tocilog</td><td>Sweetened Pork w/ Rice</td><td>12PM</td>
-                </tr>
-                <tr>
-                    <th colspan="3" class="newrow">Dinner</th>
-                </tr>
-                <tr>
-                    <td>Pinapaitan</td><td>210</td><td>2PM</td>
-                </tr>
-                <tr>
-                    <td>Tinola</td><td>211</td><td>12PM</td>
-                </tr>
-                </tbody>    
-                <tfoot>
-                    <tr>
-                        <th colspan="2" id="total-creditds">Total Credits</th>
-                        <td headers="total-credits">12</td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="container">
+            <div class="menu">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="daclass">Food</th><th class="daclass">Description</th><th class="daclass">Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th colspan="3">Breakfast</th>
+                        </tr>
+                        <tr>
+                            <td>Eggsilog</td><td>Fried Egg with Rice</td><td>50.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tocilog</td><td>Sweetened Pork w/ Rice</td><td>55.00</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="newrow">Dinner</th>
+                        </tr>
+                        <tr>
+                            <td>Pinapaitan</td><td>Bitter soup with insides of cow and other animals</td><td>75.00</td>
+                        </tr>
+                        <tr>
+                            <td>Sinigang</td><td>Soured soup with pork meat</td><td>65.00</td>
+                        </tr>
+                        <tr>
+                            <td>Tinola</td><td>Chicken soup with green papaya and chili leaves</td><td>60.00</td>
+                        </tr>
+                    </tbody>    
+                    <tfoot>
+                        <tr>
+                            <th colspan="2" id="extra">Extra Rice (per cup)</th>
+                            <td headers="extra">5.00</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <div class="sidebar">
+                <aside>
+                    <h2>More information:</h2>
+                    <ul>
+                        <li><h3>Eggsilog</h3><p>This is a fried egg with rice</p></li>
+                        <li><h3>Tocilog</h3><p>This is a sweetened pork with rice</p></li>
+                        <li><h3>Pinapaitan</h3><p>This is a bitter soup that consists of the insides of cow and other animals</p></li>
+                        <li><h3>Sinigang</h3><p>This is a sour soup that consists of pork meat, and vegetables</p></li>
+                        <li><h3>Tinola</h3><p>This is a traditional Filipino soup that consists of chicken, green papaya, and chili leaves</p></li>
+                    </ul>
+                </aside>
+            </div>
         </div>
     </main>
+    <footer>
+        <p>Seth Acosta &copy; 2020</p>
+    </footer>
 </body>
 </html>
