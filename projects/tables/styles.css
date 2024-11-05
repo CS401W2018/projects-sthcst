@@ -13,19 +13,24 @@ table {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 60% 40%;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
 }
 
 .sidebar {
     font-size: x-small;
     padding: 10px;
+    display: flex;
 }
 
 .menu {
     padding: 10px;
 }
 
+.in {
+    background-color: green;
+}
 
 th {
     background-color: #4CAF50;

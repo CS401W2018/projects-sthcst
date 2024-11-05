@@ -40,6 +40,8 @@ nav a:hover {
     grid-template-columns: 20% 80%;
 }
 
+
+
 .card {
     display: grid;
     width: 250px;
