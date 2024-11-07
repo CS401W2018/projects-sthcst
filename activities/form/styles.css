@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #265327
+}
+
+h2 {
+    color: #265327
+}
+
+p {
+    color: #265327
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #265327
+}
+
+.inputs form {
+    margin: 20px;
+    display: grid;
+}
+
+.inputs form input {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #265327;
+}
