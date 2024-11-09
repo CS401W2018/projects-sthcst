@@ -40,7 +40,28 @@ footer {
 }
 
 .form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    space-between: 10px;
+    display: flex;
+    gap: 10px;
+    margin: 5px;
+    align-items: center;
+}
+
+.form-row label {
+    width: 100px;
+    text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row label {
+        text-align: left;
+    }
+
+    input[type="submit"] {
+        margin-top: 10px;
+        color:white;
+    }
 }

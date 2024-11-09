@@ -15,14 +15,25 @@
             <h1>Needed Information</h1>
             <p>Fill out the form below to submit your information.</p>
         </div>
+        <form action="processing.html" method="post">
+            <div class="topcontainer">
+                <div class="form-row">
+                    <label for="text">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password</label>
+                    <input type="password" name="pass" id="pass" required>
+                </div>
+            </div>
+        </form>
         <div class="container">
-            <div class="inputs">
+            <!-- <div class="inputs">
                 <form action="processing.html" method="post">
                     First Name: <input type="text" name="first_name" placeholder="first name" required><br>
                     Last Name: <input type="text" name="last_name" placeholder="last" required><br>
-                    Password: <input type="password" name="pass" required><br>
                 </form>
-            </div>
+            </div> -->
             <h1>Engagement Questions</h1>
             <h2>The form tag has an "action" attribute. What does it do?</h2>
             <p>The action attribute specifies where to send the form-data when a form is submitted.</p>

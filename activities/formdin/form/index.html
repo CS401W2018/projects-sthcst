@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>CS140</h1>
+    </header>
+    <main>
+        <div class="top">
+            <h1>Needed Information</h1>
+            <p>Fill out the form below to submit your information.</p>
+        </div>
+        <fieldset class="legend">
+            <legend>Sign Up</legend>
+            <form action="processing.html" method="post">
+                <div class="topcontainer">
+                    <div class="form-row">
+                        <label for="name">Username</label>
+                        <input type="text" name="name" id="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="pass">Password</label>
+                        <input type="password" name="pass" id="pass" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </fieldset>
+        <div class="container">
+            <h2>What are different ways to style your form?</h2>
+            <p>HTML forms can be styled using inline CSS, internal styles within a style tag, or by linking to an external CSS file for better organization. Frameworks like Bootstrap offer pre-built classes for form elements, making responsive and consistent styling easy. Tailwind CSS provides utility classes for customized form styling without writing extensive custom CSS. CSS variables can also help manage theme colors or styles across the form by defining reusable values. JavaScript can be used for dynamic style changes, such as highlighting fields on focus or showing validation feedback.</p>
+            <h2>Why does the professor like to use flex?</h2>
+            <p>Because it provides an efficient way to design flexible, responsive layouts that adapt well across different screen sizes. Flexbox simplifies the alignment, spacing, and distribution of elements in a container.</p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Seth Acosta 2024</p>
+    </footer>
+</body>
+</html>
