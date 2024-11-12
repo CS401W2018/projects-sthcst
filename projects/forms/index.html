@@ -11,78 +11,77 @@
         <header>
             <h1>Rising Eagle Construction</h1>
         </header>
-            <div class="topnav">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="sign-in.html">Sign-In</a>
-                    <a href="about.html">About</a>
-                </nav>
-            </div>
-            <main>
-                <h3 class="tophead">Meet with us!</h3>
-                <p class="top">Fill out the form below to schedule a meeting with us.</p>
-                <form action="login.php" method="post">
-                    <fieldset class="aboutyou">
-                        <legend>About You</legend>
-                        <div class="topcontainer">
-                            <div class="form-row">
-                                <label for="First Name">First Name</label>
-                                <input type="text" name="First Name" id="firstname">
-                            </div>
-                            <div class="form-row">
-                                <label for="Last Name">Last Name</label>
-                                <input type="text" name="First Name" id="lastname">
-                            </div>
-                            <div class="form-row">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" required>
-                            </div>
-    
-                            <div class="form-row">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" name="phone" id="phonenum" required>
-                            </div>
-                            <div class="form-row">
-                                <label for="password">Password</label>
-                                <input type="password" name="password" id="password" required>
+        <div class="topnav">
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="sign-in.html">Sign-In</a>
+                <a href="about.html">About</a>
+            </nav>
+        </div>
+        <main>
+            <h3 class="tophead">Meet with us!</h3>
+            <p class="top">Fill out the form below to schedule a meeting with us.</p>
+            <form action="login.php" method="post">
+                <fieldset class="aboutyou">
+                    <legend>About You</legend>
+                    <div class="topcontainer">
+                        <div class="form-row">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname">
                         </div>
-                    </fieldset>
-                    <fieldset>
-                        <legend>Additional Information</legend>
-                        <div class="containerB">
-                            <div class="checkbox">
-                                <input type="radio">
-                                <label for="First Time User">This is my first time with this firm</label>
-                            </div>
-                            <div class="purpose">
-                                <h3>Which services are you interested in?</h3>
-                                <div class="innerpurpose">
-                                    <div>
-                                        <input type="checkbox" id="design" name="vehicle1" value="Design">
-                                        <label for="purpose1">Design</label><br>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="build" name="vehicle2" value="Build">
-                                        <label for="purpose2">Build</label><br>
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" id="quote name="vehicle3" value="Quote">
-                                        <label for="purpose3">Quote</label>
-                                    </div>
+                        <div class="form-row">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="phonenum">Phone Number</label>
+                            <input type="tel" name="phone" id="phonenum" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" required>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    <div class="containerB">
+                        <div class="checkbox">
+                            <input type="radio" id="first-time-user" name="firstTime">
+                            <label for="first-time-user">This is my first time with this firm</label>
+                        </div>
+                        <div class="purpose">
+                            <h3>Which services are you interested in?</h3>
+                            <div class="innerpurpose">
+                                <div>
+                                    <input type="checkbox" id="design" name="service" value="Design">
+                                    <label for="design">Design</label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="build" name="service" value="Build">
+                                    <label for="build">Build</label><br>
+                                </div>
+                                <div>
+                                    <input type="checkbox" id="quote" name="service" value="Quote">
+                                    <label for="quote">Quote</label>
                                 </div>
                             </div>
-                            <div class="inputDesign">
-                                <label for="Desired Design">Please give a brief description on what you want to be constructed:</label>
-                                <textarea name="Desired Design" id="desDesign" cols="30" rows="2"></textarea>
-                            </div>
                         </div>
-                    </fieldset>
-                    <div class="button-row">
-                        <input type="submit" value="Submit">
+                        <div class="inputDesign">
+                            <label for="desDesign">Please give a brief description of what you want to be constructed:</label>
+                            <textarea name="description" id="desDesign" cols="30" rows="2"></textarea>
+                        </div>
                     </div>
-                </form>
-            </main>
+                </fieldset>
+                <div class="button-row">
+                    <input type="submit" value="Submit" class="onlybutton">
+                </div>
+            </form>
+        </main>
     </div>
-    
 </body>
 </html>
