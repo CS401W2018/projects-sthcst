@@ -7,27 +7,82 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <h1>Rising Eagle Construction</h1>
-    </header>
-    <body>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="sign-in.html">Sign-In</a>
-            <a href="about.html">About</a>
-        </nav>
-        <main>
-            <h3 class="tophead">Login Page</h3>
-            <form action="login.php" method="post">
-                <div class="containerA">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="username">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="password">
-                    <input type="submit" value="Login">
-                </div>
-            </form>
-        </main>
-    </body>
+    <div class="maincontainer">
+        <header>
+            <h1>Rising Eagle Construction</h1>
+        </header>
+            <div class="topnav">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="sign-in.html">Sign-In</a>
+                    <a href="about.html">About</a>
+                </nav>
+            </div>
+            <main>
+                <h3 class="tophead">Meet with us!</h3>
+                <p class="top">Fill out the form below to schedule a meeting with us.</p>
+                <form action="login.php" method="post">
+                    <fieldset class="aboutyou">
+                        <legend>About You</legend>
+                        <div class="topcontainer">
+                            <div class="form-row">
+                                <label for="First Name">First Name</label>
+                                <input type="text" name="First Name" id="firstname">
+                            </div>
+                            <div class="form-row">
+                                <label for="Last Name">Last Name</label>
+                                <input type="text" name="First Name" id="lastname">
+                            </div>
+                            <div class="form-row">
+                                <label for="email">Email</label>
+                                <input type="email" name="email" id="email" required>
+                            </div>
+    
+                            <div class="form-row">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" name="phone" id="phonenum" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" id="password" required>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Additional Information</legend>
+                        <div class="containerB">
+                            <div class="checkbox">
+                                <input type="radio">
+                                <label for="First Time User">This is my first time with this firm</label>
+                            </div>
+                            <div class="purpose">
+                                <h3>Which services are you interested in?</h3>
+                                <div class="innerpurpose">
+                                    <div>
+                                        <input type="checkbox" id="design" name="vehicle1" value="Design">
+                                        <label for="purpose1">Design</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="build" name="vehicle2" value="Build">
+                                        <label for="purpose2">Build</label><br>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox" id="quote name="vehicle3" value="Quote">
+                                        <label for="purpose3">Quote</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputDesign">
+                                <label for="Desired Design">Please give a brief description on what you want to be constructed:</label>
+                                <textarea name="Desired Design" id="desDesign" cols="30" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="button-row">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </main>
+    </div>
+    
 </body>
 </html>
