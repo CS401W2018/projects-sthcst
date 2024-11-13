@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="formprocessing.php" method="post" id="this">
+            <label for="name" id="name">Name:</label>
+            <input type="text" name="name" id="name">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Submit</button>
+        </form>
+        <script>
+            document.getElementById('this').addEventListener('submit', function(event) {
+                event.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                console.log(name);
+                console.log(email);
+                alert(`Name: ${name}\nEmail: ${email}`);
+                if (!name) {
+                    
+                }
+            });
+        </script>
+
+
+
+
+        <h2>Engagement</h2>
+        <h3>What is Javascript? How did it get its name?</h3>
+        <p>JavaScript is a programming language that was created by Brendan Eich in 1995. It was originally called Mocha, then LiveScript, and finally JavaScript. The name JavaScript was chosen to capitalize on the popularity of Java at the time.</p>
+        <h3>What are the two ways you can run JavasScript?</h3>
+        <p>There are two ways to run JavaScript: in the browser and on the server. In the browser, JavaScript is executed by the browser's JavaScript engine. On the server, JavaScript is executed by a server-side JavaScript engine like Node.js.</p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>The most popular front-end JavaScript library is jQuery. jQuery is a fast, small, and feature-rich JavaScript library that simplifies HTML document traversing, event handling, animating, and Ajax interactions for rapid web development.</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>The most popular front-end JavaScript library today is React. React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies.</p>
+    </main>
+</body>
+</html>
