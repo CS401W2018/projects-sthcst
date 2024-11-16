@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form II</title>
+</head>
+<body>
+    <nav> link link link </nav>
+    <main>
+        <h1>Form Submission</h1>
+        <form action="processing.php" method="post" id="this">
+            <label for="fname">First Name:</label>
+            <input type="text" name="firstName" id="fname">
+            
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lastName" id="lname">
+            
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email">
+            
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+            
+            <button type="submit">Submit</button>
+        </form>
+
+        <script>
+            document.getElementById('myForm').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Collect form values
+                const firstName = document.getElementById('fname').value;
+                const lastName = document.getElementById('lname').value;
+                const email = document.getElementById('email').value;
+                const age = document.getElementById('age').value;
+
+                // Validation
+                if (!firstName || !lastName || !email || !age) {
+                    alert('Please fill out all fields');
+                    return;
+                }
+
+                // Form data object
+                const formData = {
+                    firstName: firstName,
+                    lastName: lastName,
+                    email: email,
+                    age: age
+                };
+
+                // Sending form data using AJAX
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", "formprocessing.php", true);
+                xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+                // xhr.onreadystatechange = function() {
+                //     if (xhr.readyState === 4 && xhr.status === 200) {
+                //         alert("Form Submitted Successfully");
+                //     } else if (xhr.readyState === 4) {
+                //         alert("Error: Form not submitted");
+                //     }
+                // };
+
+                // Send form data as JSON
+                xhr.send(JSON.stringify(formData));
+            });
+        </script>
+
+        <h2>Engagament Questions</h2>
+        <h3>What is AJAX?</h3>
+        <p>AJAX stands for Asynchronous JavaScript and XML. It is a set of web development techniques using many web technologies on the client side to create asynchronous web applications. With AJAX, web applications can send and retrieve data from a server asynchronously without interfering with the display and behavior of the existing page.</p>
+        <h3>Why do you put your JS Code in a separate file?</h3>
+        <p>Putting JavaScript code in a separate file has several benefits. It helps keep the HTML code clean and organized, separates the structure of the document from its behavior, allows for better code reuse, and improves the maintainability and readability of the code. Additionally, external JavaScript files can be cached by the browser, which can improve the performance of the web page.</p>
+
+    </main>
+</body>
+</html>

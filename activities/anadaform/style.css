@@ -1,0 +1,60 @@
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+h3 {
+    font-family: Arial, sans-serif;
+    font-size: 1.5em;
+    color: #666;
+    margin-bottom: 0.5em;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input, form textarea, form select, form button {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    font-family: Arial, sans-serif;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    font-family: Arial, sans-serif;
+    background: #0056b3;
+}
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2.5em;
+    color: #111;
+    margin-bottom: 0.5em;
+    text-align: center;
+}

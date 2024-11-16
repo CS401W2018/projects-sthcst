@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <main>
-        <form action="formprocessing.php" method="post" id="this">
-            <label for="name" id="name">Name:</label>
+        <form action="processing.php" method="post" id="this">
+            <label for="name">Name:</label>
             <input type="text" name="name" id="name">
             <label for="email">Email:</label>
             <input type="email" name="email" id="email">
@@ -25,15 +25,9 @@
                 console.log(name);
                 console.log(email);
                 alert(`Name: ${name}\nEmail: ${email}`);
-                // if (!name) {
-
-                // }
             });
         </script>
-
-
-
-
+        
         <h2>Engagement</h2>
         <h3>What is Javascript? How did it get its name?</h3>
         <p>JavaScript is a programming language that was created by Brendan Eich in 1995. It was originally called Mocha, then LiveScript, and finally JavaScript. The name JavaScript was chosen to capitalize on the popularity of Java at the time.</p>
