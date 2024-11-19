@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // AJAX call to mock server
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "response.json", true);
+        xhr.open("GET", "projects/newform/response.json", true);
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.onload = function () {
