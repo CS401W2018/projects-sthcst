@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: document.getElementById("name").value.trim(),
             email: document.getElementById("email").value.trim(),
             phone: document.getElementById("phone").value.trim(),
-            address: document.getElementById("address").value.trim(),
+            address: document.getElementById("address") ? document.getElementById("address").value.trim() : "",
             city: document.getElementById("city").value,
             projectType: document.getElementById("project-type").value,
             projectDescription: document.getElementById("project").value.trim(),
@@ -29,20 +29,22 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        // Log the object to the console
-        console.log("Form Data Submitted:", formData);
+        // Serialize form data into query string
+        const queryParams = new URLSearchParams(formData).toString();
 
         // AJAX call to mock server
         const xhr = new XMLHttpRequest();
-        xhr.open("GET", "projects/newform/response.json", true);
-        xhr.setRequestHeader("Content-Type", "application/json");
+        const url = `projects/newform/response.json?${queryParams}`; // Append data to URL
+        xhr.open("GET", url, true);
 
         xhr.onload = function () {
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
-                document.getElementById("message").innerText = response.message;
-
-                // Notify user and reset the form
+                const messageDiv = document.getElementById("message");
+                if (messageDiv) {
+                    messageDiv.innerText = response.message;
+                    messageDiv.style.color = "green"; // Style success message
+                }
                 form.reset();
             } else {
                 alert("An error occurred while processing your form.");
@@ -53,6 +55,6 @@ document.addEventListener("DOMContentLoaded", () => {
             alert("An error occurred during the AJAX request.");
         };
 
-        xhr.send();
+        xhr.send(); // Send GET request
     });
 });
