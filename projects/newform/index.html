@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form Project</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Projects</a>
+            <a href="#">Gallery</a>
+        </nav>
+    </header>
+    <h1>Rising Eagle Construction</h1>
+    <main>
+        <p class="maindescription">Thank you for choosing Rising Eagle Construction for your construction needs. Please fill out the form below to get started.</p>
+    </main>
+    <form id="exampleForm">
+        <div class="container">
+            <legend>Enter your information:</legend>
+            <br>
+            <form>
+                <div class="form-row">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="phone">Phone</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div class="notice">
+                    <p>Our firm can only accept projects in the following cities:</p>
+                </div>
+                <div class="form-row">
+                    <label for="city">Select Your City</label>
+                    <select id="city" name="city">
+                        <option value="">Select a City</option>
+                        <option value="manila">Manila</option>
+                        <option value="quezon-city">Quezon City</option>
+                        <option value="davao-city">Davao City</option>
+                        <option value="cebu-city">Cebu City</option>
+                        <option value="zamboanga-city">Zamboanga City</option>
+                        <option value="bacolod">Bacolod</option>
+                        <option value="cagayan-de-oro">Cagayan de Oro</option>
+                        <option value="iloilo-city">Iloilo City</option>
+                        <option value="taguig">Taguig</option>
+                        <option value="makati">Makati</option>
+                        <option value="pasig">Pasig</option>
+                        <option value="santiago">Santiago City</option>
+                        <option value="san-fernando">San Fernando City</option>
+                        <option value="san-jose">San Jose City</option>
+                        <option value="san-jose-del-monte">San Jose del Monte City</option>
+                        <option value="tuguegarao">Tuguegarao City</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="project-type">Project Type</label>
+                    <select id="project-type" name="project-type">
+                        <option value="">Select a Project Type</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                        <option value="industrial">Industrial</option>
+                        <option value="institutional">Institutional</option>
+                        <option value="infrastructure">Infrastructure</option>
+                        <option value="transportation">Transportation</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label for="project">Project Description</label>
+                    <textarea id="project" name="project" rows="5">I would like to have a house that...</textarea>
+                </div>
+                <div class="form-row">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </form>
+    <script src="formHandler.js"></script>
+</body>
+</html>
