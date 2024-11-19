@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // AJAX call to mock server
         const xhr = new XMLHttpRequest();
-        const url = `response.json?${queryParams}`; // Corrected path
+        const url = `projects/newform/response.json?${queryParams}`; // Corrected path
         xhr.open("GET", url, true);
-        
+
         xhr.onload = function () {
             const messageDiv = document.getElementById("message");
             if (xhr.status === 200) {
