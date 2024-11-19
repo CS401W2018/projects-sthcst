@@ -37,16 +37,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const xhr = new XMLHttpRequest();
         const url = `response.json?${queryParams}`; // Corrected path
         xhr.open("GET", url, true);
-
+        
         xhr.onload = function () {
             const messageDiv = document.getElementById("message");
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
-                console.log(response);  // Log the response to see what comes back
                 messageDiv.innerText = response.message;
                 messageDiv.style.color = "green"; // Success message styling
             } else {
-                console.error(`Error: ${xhr.status}`);  // Log error status if not 200
                 messageDiv.innerText = "An error occurred while processing your form.";
                 messageDiv.style.color = "red"; // Error message styling
             }
