@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // AJAX call to mock server
         const xhr = new XMLHttpRequest();
-        const url = `response.json?${queryParams}`; // Append data to URL
+        const url = `projects/newform/response.json?${queryParams}`; // Corrected path
         xhr.open("GET", url, true);
         
         xhr.onload = function () {
