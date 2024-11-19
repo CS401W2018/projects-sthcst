@@ -36,19 +36,18 @@ document.addEventListener("DOMContentLoaded", () => {
         const xhr = new XMLHttpRequest();
         const url = `projects/newform/response.json?${queryParams}`; // Append data to URL
         xhr.open("GET", url, true);
-
+        
         xhr.onload = function () {
+            const messageDiv = document.getElementById("message");
             if (xhr.status === 200) {
                 const response = JSON.parse(xhr.responseText);
-                const messageDiv = document.getElementById("message");
-                if (messageDiv) {
-                    messageDiv.innerText = response.message;
-                    messageDiv.style.color = "green"; // Style success message
-                }
-                form.reset();
+                messageDiv.innerText = response.message;
+                messageDiv.style.color = "green"; // Success message styling
             } else {
-                alert("An error occurred while processing your form.");
+                messageDiv.innerText = "An error occurred while processing your form.";
+                messageDiv.style.color = "red"; // Error message styling
             }
+            form.reset();
         };
 
         xhr.onerror = function () {
