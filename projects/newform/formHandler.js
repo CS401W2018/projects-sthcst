@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!formData.email) errors.push("Email is required.");
         if (!formData.phone) errors.push("Phone number is required.");
         if (!formData.city) errors.push("City must be selected.");
+        if (!formData.address) errors.push("Address must be provided.");
         if (!formData.projectType) errors.push("Project Type must be selected.");
         if (!formData.projectDescription) errors.push("Project Description is required.");
 
@@ -43,10 +44,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const response = JSON.parse(xhr.responseText);
                 messageDiv.innerText = response.message;
                 messageDiv.style.color = "green"; // Success message styling
-            } else {
-                messageDiv.innerText = "An error occurred while processing your form.";
-                messageDiv.style.color = "red"; // Error message styling
-            }
+            // } else {
+            //     messageDiv.innerText = "An error occurred while processing your form.";
+            //     messageDiv.style.color = "red"; // Error message styling
+            // }
             form.reset();
         };
 
