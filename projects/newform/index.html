@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Form Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
@@ -20,10 +20,9 @@
     <main>
         <p class="maindescription">Thank you for choosing Rising Eagle Construction for your construction needs. Please fill out the form below to get started.</p>
     </main>
-    <form id="exampleForm">
-        <div class="container">
+    <form id="form-example">
+        <fieldset>
             <legend>Enter your information:</legend>
-            <br>
             <div class="form-row">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="name">
@@ -85,7 +84,7 @@
                 <button type="submit">Submit</button>
             </div>
             <div id="message" class="form-message"></div>
-        </div>
+        </fieldset>
     </form>
     <script src="formHandler.js"></script>
 </body>

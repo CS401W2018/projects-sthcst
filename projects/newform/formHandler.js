@@ -15,6 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
             projectDescription: document.getElementById("project").value.trim(),
         };
 
+        // Print form data to the console
+        console.log(formData); // Add this line to log the form data
+
         // Validation
         const errors = [];
         if (!formData.name) errors.push("Name is required.");
