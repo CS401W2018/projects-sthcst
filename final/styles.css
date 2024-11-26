@@ -78,6 +78,10 @@ img {
 
 .header_logo {
     margin: 0;
+    text-indent: -9999px; /* Push the text out of view */
+    overflow: hidden;     /* Prevent scrolling to the text */
+    white-space: nowrap;  /* Prevent wrapping */
+    display: block;     /* Only block elements can have a width */
 }
 
 .header_ul {
