@@ -4,6 +4,12 @@ body {
     font-optical-sizing: auto;
 }
 
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
 nav {
     display: flex;
     justify-content: space-around; /* Evenly space the links */
@@ -24,6 +30,13 @@ nav a:hover {
     transition: background-color 0.3s, color 0.3s; /* Smooth transition */
     transition-property: all;
     color: #181368; /* Change text color on hover */
+    border-radius: 10px;
+}
+
+.mainheader {
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
     border-radius: 10px;
 }
 

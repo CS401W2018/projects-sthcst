@@ -1,0 +1,86 @@
+body {
+    min-block-size: 100vb;
+    font-size: 1.4em;
+    background-image: linear-gradient(to bottom, rgb(17, 24, 39), rgb(75, 85, 99));
+    font-family: "Parkinsans", Arial, sans-serif;
+    line-height: 1.5;
+    color: rgb(75, 85, 99);
+}
+
+img {
+    width: 300px;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    /* set background color to rgb(17, 24, 39); and opacity to 50% */
+    background-color: rgba(17, 24, 39, 0.5);
+    padding-block: 3rem;
+    row-gap: 1rem;
+    padding-inline: 3rem;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+.header_img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+.header_logo {
+    margin: 0;
+}
+
+.header_ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+
+
+.header__a {
+    /* set color opacity to 50% and color whitesmoke; */
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+    background: rgb(17, 24, 39, 0.99);
+    border-radius: 5px;
+    display: block;
+    /* set text to 20% smaller */
+    font-size: 0.8em;
+}
+
+.header__a:hover {
+    /* set color opacity to 50% and color whitesmoke; */
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .header {
+        flex-direction: column;
+    }
+
+
+    .header_ul {
+        justify-content: center;
+        margin-block-end: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    body {
+        /* background: red */
+    }
+
+}
