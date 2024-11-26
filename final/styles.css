@@ -7,9 +7,52 @@ body {
     color: rgb(75, 85, 99);
 }
 
+.container {
+    margin: 1em;
+}
+
 img {
     width: 300px;
     height: auto;
+    border-radius: 100px;
+}
+
+.maininfo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    margin: 20px 0 50px;
+}
+
+.maininfo {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid green;
+    margin: 20px 0 50px;
+}
+
+.leftinfo {
+    flex: 25%;
+}
+
+.rightinfo {
+    flex: 50%;
+    text-align: right;
+    padding-block: 3rem;
+    row-gap: 1rem;
+    padding-inline: 3rem;
+    padding: 2rem;
+    margin: 2rem;
+}
+
+.header_b {
+    /* center my text */
+    text-align: center;
+    padding-block: 3rem;
+    row-gap: 1rem;
+    padding-inline: 3rem;
+    padding: 2rem;
+    margin: 2rem;
 }
 
 .header {
@@ -64,6 +107,27 @@ img {
     /* set color opacity to 50% and color whitesmoke; */
     color: whitesmoke;
     text-decoration: none;
+}
+
+.maininfo {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    color:#181368;
+}
+
+.maininfo h2 {
+    color: #181368;
+    text-align: center;
+}
+
+.tabledesc {
+    margin-top: 1rem; 
+    font-style: italic; 
+    color: #555;
 }
 
 @media screen and (max-width: 1100px) {
