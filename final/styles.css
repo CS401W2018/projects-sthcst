@@ -60,7 +60,6 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    /* set background color to rgb(17, 24, 39); and opacity to 50% */
     background-color: rgba(17, 24, 39, 0.5);
     padding-block: 3rem;
     row-gap: 1rem;
@@ -78,10 +77,10 @@ img {
 
 .header_logo {
     margin: 0;
-    text-indent: -9999px; /* Push the text out of view */
-    overflow: hidden;     /* Prevent scrolling to the text */
-    white-space: nowrap;  /* Prevent wrapping */
-    display: block;     /* Only block elements can have a width */
+    text-indent: -9999px;
+    overflow: hidden;  
+    white-space: nowrap; 
+    display: block;     
 }
 
 .header_ul {
@@ -113,6 +112,13 @@ img {
     text-decoration: none;
 }
 
+.header__a.active {
+    color: #fff; /* Highlight the text */
+    font-weight: bold; /* Optional: Make the text bold */
+    background-color: rgba(75, 85, 99, 0.7); /* Subtle background highlight */
+    border-radius: 5px; /* Match existing button styles */
+}
+
 .maininfo {
     padding: 10px;
     background-color: #fff;
@@ -132,6 +138,10 @@ img {
     margin-top: 1rem; 
     font-style: italic; 
     color: #555;
+}
+
+.generalinfo table tr td {
+    border: 1px solid blue;
 }
 
 @media screen and (max-width: 1100px) {
