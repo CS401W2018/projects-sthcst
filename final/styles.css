@@ -17,7 +17,6 @@ img {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    /* set background color to rgb(17, 24, 39); and opacity to 50% */
     background-color: rgba(17, 24, 39, 0.5);
     padding-block: 3rem;
     row-gap: 1rem;
@@ -134,7 +133,7 @@ h2 {
         height: 50px;
         width: 50px;
         margin-left: auto;
-        position: relative;
+        position: absolute;
     }
 
     .ham-menu span {
