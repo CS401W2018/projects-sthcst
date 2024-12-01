@@ -26,6 +26,15 @@ img {
     border-radius: 10px;
 }
 
+footer {
+    background-color: rgba(17, 24, 39, 0.5);
+    padding-inline: 3rem;
+    margin: 4rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
 .header_logo img {
     display: block;
     margin-bottom: -50px;
@@ -115,7 +124,7 @@ h2 {
 .generalinfo table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
+    margin: 20px0;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -164,6 +173,80 @@ h2 {
     line-height: 1.6;
 }
 
+/* Form container styling */
+.form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Form heading */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Form group styling */
+
+#contactForm {
+    align-items: center;
+    margin: auto;
+    background-color: rgb(17, 24, 39);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0066cc;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #004d99;
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
@@ -210,6 +293,10 @@ h2 {
 
     .generalinfo {
         font-size: 1rem;
+    }
+
+    .leftinfo img {
+        width: 40%;
     }
 
     h2 {
