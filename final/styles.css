@@ -293,10 +293,15 @@ button:hover {
 
     .generalinfo {
         font-size: 1rem;
+        padding-right: 0;
     }
 
-    .leftinfo img {
-        width: 40%;
+    .leftinfo {
+        padding-left: 0;
+    }
+
+    .rightinfo {
+
     }
 
     h2 {
