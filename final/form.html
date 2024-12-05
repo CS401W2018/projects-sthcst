@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact us for all your residential, commercial, and remodeling construction needs. Reach out through our simple and intuitive contact form.">
+    <meta name="keywords" content="Construction, Residential, Commercial, Remodeling, Renovation, Contact Form">
+    <meta name="author" content="Rising Eagle Construction">
+    <meta name="theme-color" content="#007bff">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header_logo">rec
+            <a href="index.html">
+                <img src="rec_banner.png" class="header_img" alt="">
+            </a>
+        </h1>
+        <nav class="header_nav">
+            <ul class="header_ul">
+                <li><a class="header__a active" href="index.html">Home</a></li>
+                <li><a class="header__a" href="services.html">Services</a></li>
+                <li><a class="header__a" href="gallery.html">Gallery</a></li>
+                <li><a class="header__a" href="about.html">About Us</a></li>
+                <li><a class="header__a" href="faqs.html">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="contactForm" class="form">
+        <h2>Contact Us</h2>
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+        </div>
+        <div class="form-group">
+            <label for="projectType">Project Type:</label>
+            <select id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a project type</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="remodeling">Remodeling and Renovation</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Add any additional comments..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>

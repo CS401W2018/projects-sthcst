@@ -22,8 +22,17 @@ img {
     row-gap: 1rem;
     padding-inline: 3rem;
     padding: 2rem;
-    margin: 2rem;
+    margin: 4rem;
     border-radius: 10px;
+}
+
+footer {
+    background-color: rgba(17, 24, 39, 0.5);
+    padding-inline: 3rem;
+    margin: 4rem;
+    border-radius: 10px;
+    font-size: 0.7rem;
+    text-align: center;
 }
 
 .header_logo img {
@@ -57,7 +66,7 @@ img {
     align-items: center;
     gap: 3rem;
     padding: 2rem;
-    margin: 2rem;
+    margin: 4rem;
     border-radius: 10px;
     background-color: rgba(17, 24, 39, 0.5);
     color:aliceblue;
@@ -65,6 +74,18 @@ img {
 
 h2 {
     text-align: center;
+}
+
+.leftinfo {
+    padding-left: 20px;
+}
+
+.generalinfo {
+    padding-right: 20px;
+}
+
+.rightinfo {
+    padding-right: 20px;
 }
 
 .leftinfo img {
@@ -91,6 +112,183 @@ h2 {
     text-decoration: none;
 }
 
+/* General styling for the info section */
+.generalinfo {
+    margin: 20px auto;
+    max-width: 900px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    text-align: center;
+}
+
+.generalinfo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.generalinfo table thead {
+    background-color: #002244; /* Dark blue for header */
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.generalinfo table th, 
+.generalinfo table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.generalinfo table th {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.generalinfo table tr:nth-child(even) {
+    background-color: rgb(98, 110, 127); /* Subtle alternating row colors */
+    color: whitesmoke;
+}
+
+.generalinfo table tr:nth-child(odd) {
+    background-color: rgb(75, 85, 99);
+    color: whitesmoke;
+}
+
+.generalinfo table tr:hover {
+    background-color: #46607e; /* Highlight row on hover */
+}
+
+.generalinfo table td {
+    font-size: 15px;
+    text-align: left;
+}
+
+/* Styling for the description paragraph */
+.tabledesc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: whitesmoke;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Form container styling */
+.form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+}
+
+/* Form heading */
+.form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+/* Form group styling */
+
+#contactForm {
+    align-items: center;
+    margin: auto;
+    background-color: rgb(17, 24, 39);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #0066cc;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+}
+
+/* General styles for the select dropdown */
+.form-group select {
+    width: 100%; /* Make it take full width of the parent */
+    padding: 10px; /* Add padding for a clean look */
+    border: 1px solid #ccc; /* Light border for definition */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #f9f9f9; /* Subtle background color */
+    color: #333; /* Text color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    appearance: none; /* Removes default arrow styles for consistency */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Change border and shadow on focus */
+.form-group select:focus {
+    border-color: #0066cc; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); /* Glow effect */
+    background-color: #fff; /* Slightly lighter background */
+}
+
+/* Optional: Style the disabled placeholder option */
+.form-group select option[value=""] {
+    color: #999; /* Gray out the placeholder text */
+    font-style: italic; /* Make it distinguishable */
+}
+
+/* Optional: Style the label for better alignment */
+.form-group label {
+    display: block;
+    color: #ffffff; /* Adjust to match your theme */
+    margin-bottom: 5px;
+}
+
+/* Styling for the button */
+.first-button {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically */     /* Make container take up full viewport height */
+}
+
+/* Button styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: rgb(75, 85, 99);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #071e36;
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
@@ -104,8 +302,9 @@ h2 {
         justify-content: center;
     }
 
-    .header__a {
-        display: none; /* Hide the navigation menu on smaller screens */
+    .header_ul a {
+        margin: -10px;
+        font-size: 0.7em;
     }
 
     .off-screen-menu {
@@ -124,24 +323,6 @@ h2 {
         transition: .3s ease;
     }
 
-    .off-screen-menu.active {
-        right: 0;
-
-    }
-
-    .ham-menu {
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
-        position: absolute;
-    }
-
-    .ham-menu span {
-        height: 5px;
-        width: 100px;
-        background-color: black;
-    }
-
     body {
         /* background: red */
     }
@@ -149,6 +330,20 @@ h2 {
     .maininfo {
         flex-direction: column;
         justify-content: space-between;
+        font-size: 1rem;
+    }
+
+    .generalinfo {
+        font-size: 1rem;
+        padding-right: 0;
+    }
+
+    .leftinfo {
+        padding-left: 0;
+    }
+
+    .rightinfo {
+
     }
 
     h2 {
