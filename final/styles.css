@@ -124,7 +124,7 @@ h2 {
 .generalinfo table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px0;
+    margin: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -315,6 +315,93 @@ h2 {
     color:aliceblue;
 }
 
+.card {
+    display: grid;
+    width: 250px;
+    border: thin solid black;
+    box-shadow: 5px 5px 5px rgba(50, 50, 50, 0.5);
+    margin: 10px 0;
+}
+
+aside li {
+    list-style: none;
+}
+
+aside {
+    display: grid;
+}
+
+.side {
+    margin-right: 10px;
+}
+
+aside img {
+    width: 100px;
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card h3, p {
+    padding: 10px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+/* .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 10px;
+    background-color: rgba(17, 24, 39, 0.5);
+    color:aliceblue;
+} */
+
+.subinfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    margin-top: 4rem;
+    border-radius: 10px;
+    background-color: rgba(17, 24, 39, 0.5);
+    color:aliceblue;
+}
+
+.subinfo a img {
+    display: block; /* Makes the image a block element */
+    width: 20%; /* Sets the desired size */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+.video iframe {
+    border: none; /* Removes the border */
+    width: 100%; /* Optional: Makes the iframe responsive */
+    max-width: 560px; /* Ensures it doesn’t exceed the original width */
+    height: 315px; /* Ensures consistent height */
+    display: block; /* Centers in flex or block context */
+    margin: 0 auto; /* Center horizontally if needed */
+}
+
+.project {
+    text-align: center;
+    padding: 20px;
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
@@ -348,10 +435,6 @@ h2 {
         padding-left: 0;
     }
 
-    .rightinfo {
-
-    }
-
     h2 {
         text-align: center;
     }
@@ -366,4 +449,18 @@ h2 {
         font-size: large;
     }
 
+    .subinfo h2 {
+        display: none;
+    }
+
+    .subinfo a img {
+        display: block; /* Makes the image a block element */
+        width: 20%; /* Sets the desired size */
+        margin: 0 auto; /* Centers the image horizontally */
+    }
+    
+
+    .last {
+        display: none;
+    }
 }
