@@ -22,7 +22,6 @@ img {
     row-gap: 1rem;
     padding-inline: 3rem;
     padding: 2rem;
-    margin: 4rem;
     border-radius: 10px;
 }
 
@@ -66,11 +65,12 @@ footer {
     align-items: center;
     gap: 3rem;
     padding: 2rem;
-    margin: 4rem;
+    margin-top: 4rem;
     border-radius: 10px;
     background-color: rgba(17, 24, 39, 0.5);
     color:aliceblue;
 }
+
 
 h2 {
     text-align: center;
@@ -289,6 +289,32 @@ h2 {
     background-color: #071e36;
 }
 
+/* this is for the testimonial */
+
+.testimonial_img img {
+    border-radius: 10px;
+}
+
+.testimonial {
+    text-align: center;
+    padding: 2rem;
+    font-size: medium;
+}
+
+
+.container_t {
+    display: grid;
+    /* justify-content: space-between; */
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    padding: 2rem;
+    margin: 4rem;
+    border-radius: 10px;
+    background-color: rgba(17, 24, 39, 0.5);
+    color:aliceblue;
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
@@ -296,35 +322,15 @@ h2 {
 
 
     .header_ul {
-        justify-content: center;
-        margin-block-end: 0;
-        flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .header_ul a {
         margin: -10px;
         font-size: 0.7em;
-    }
-
-    .off-screen-menu {
-        background-color: rgb(34, 367, 49);
-        height: 100vh;
-        width: 100%;
-        max-width: 450px;
-        position: fixed;
-        top: 0;
-        right: -450px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 3rem;
-        transition: .3s ease;
-    }
-
-    body {
-        /* background: red */
+        background: none;
+        /* padding left and right is all the way to the end */
     }
 
     .maininfo {
@@ -348,6 +354,16 @@ h2 {
 
     h2 {
         text-align: center;
+    }
+
+    .container_t {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container_t .testimonial {
+        padding: 1rem;
+        font-size: large;
     }
 
 }
