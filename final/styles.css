@@ -407,6 +407,10 @@ aside img {
     color: white;
 }
 
+.header_b {
+    color: white;
+}
+
 @media screen and (max-width: 1100px) {
     .header {
         flex-direction: column;
